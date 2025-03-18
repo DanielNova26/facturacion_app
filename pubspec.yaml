@@ -29,7 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   firebase_core: ^3.12.1
-  firebase_storage: ^12.4.4
+  firebase_storage: ^12.1.0
   flutter:
     sdk: flutter
   image_picker: ^0.8.7+3
@@ -40,7 +40,7 @@ dependencies:
   pdf: ^3.9.0
   printing: ^5.9.0
   path_provider: ^2.1.5
-  permission_handler: ^10.2.0
+  permission_handler: 11.4.0
   open_file: ^3.2.1
   syncfusion_flutter_pdf: ^28.2.9
   file_picker: ^9.0.2
