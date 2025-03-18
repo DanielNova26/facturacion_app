@@ -2,7 +2,7 @@ platform :ios, '13.0'
 
 target 'Runner' do
   use_frameworks!
-  use_modular_headers!
+  #use_modular_headers!
 
   # Pods for Runner
 
