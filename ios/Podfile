@@ -1,0 +1,9 @@
+# Podfile mínimo para Flutter iOS con iOS 13.0
+platform :ios, '13.0'
+
+target 'Runner' do
+  use_frameworks!
+  use_modular_headers!
+
+  # Pods for Runner
+end
