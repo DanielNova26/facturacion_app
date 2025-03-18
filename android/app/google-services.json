@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1076885236991",
+    "project_id": "facturacionapp-b85c9",
+    "storage_bucket": "facturacionapp-b85c9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076885236991:android:a83cb0127c94813ae7f0ca",
+        "android_client_info": {
+          "package_name": "com.example.facturacion_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9LNF-wUdMn86u9HTRKd7d-vQBWwUGwlw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

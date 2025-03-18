@@ -1,0 +1,49 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+    // Si utilizas Firebase, asegúrate de tener este plugin:
+    id "com.google.gms.google-services"
+}
+
+android {
+    // Define el namespace y las versiones usando las variables de Flutter o valores fijos
+    namespace "com.example.facturacion_app"
+    compileSdkVersion flutter.compileSdkVersion // O bien: compileSdkVersion 33 (o el valor que necesites)
+    ndkVersion flutter.ndkVersion
+
+    defaultConfig {
+        // Debe coincidir con el package_name de google-services.json
+        applicationId "com.example.facturacion_app"
+        minSdkVersion flutter.minSdkVersion  // o minSdkVersion 21
+        targetSdkVersion flutter.targetSdkVersion  // o targetSdkVersion 33
+        versionCode flutter.versionCode.toInteger()  // Asegúrate que flutter.versionCode esté definido
+        versionName flutter.versionName
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    buildTypes {
+        release {
+            // Configuración de firma (aquí se usa la configuración de debug para release; modifícala según necesites)
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    // Otras dependencias que necesites
+    implementation 'com.github.yalantis:ucrop:2.2.10'
+}
+
+flutter {
+    source "../.."
+}
